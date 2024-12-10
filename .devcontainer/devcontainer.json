@@ -1,13 +1,12 @@
 {
-    "name": "React + Node.js Dev Container",
+    "name": "React Dev Container",
     "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
     "features": {
       "python": "3.10"
     },
     "forwardPorts": [
-      3000,
-      3001
+      5173
     ],
-    "postCreateCommand": "cd client && npm install && cd ../server && pip install -r requirements.txt && npm install"
+    "postCreateCommand": "npm install"
   }
   
