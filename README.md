@@ -31,6 +31,8 @@
 </p>
 
 
+# Sample Javascript using React
+
 ## Introduction
 Ex-Cons Thrive is a project designed to help formerly incarcerated individuals reintegrate into society by providing job search assistance, legal support, mental health services, and more. This project draws inspiration from the hardships faced by ex-convicts during reintegration, including the stigma, lack of opportunities, and legal barriers that often limit their options. It makes use of Llama3-8b-8192 and Mixtral-8x7b-32768 AI model.
 
@@ -51,7 +53,6 @@ Ex-convicts often face significant challenges when reintegrating into society, p
 The Ex-Cons Thrive project aims to address these challenges by providing a personalized job assistance platform that leverages advanced AI models to offer tailored job suggestions based on individual experiences, skills, and needs. The goal is to empower ex-convicts with the resources and support they need to successfully reintegrate into society and build fulfilling careers.
 
 
-## Key Features
 ## Key Features
 
 1. **Personalized Job Search for Ex-Convicts**
@@ -74,45 +75,33 @@ The Ex-Cons Thrive project aims to address these challenges by providing a perso
 
 
 ## Dependencies
+- Daytona
 - React
 - Tailwind
 - Express JS
 - Mistral and Llama
+  
 
 ## Getting Started
 
-### Installation
+### Open Using Daytona  
 
-#### Clone the repository:
-```bash
-git clone https://github.com/Sujan-Koirala021/ex-con-thrive.git
-```
+1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
+2. **Create the Workspace**:  
+   ```bash  
+   daytona create <SAMPLE_REPO_URL> 
+   ```
+2. **Make sure that port 5173 is added as the forward port.**:  
+3. **Set up the environment variables by creating a **.env** file in the root directory and add your groq api**:
+      ```bash  
+      VITE_GROQ_API_KEY=<YOUR_GROQ_API_KEY>
+   ```  
+4. **Start the Application**:  
+   ```bash  
+    npm run dev
+   ```  
 
-
-### Setup 
-
-#### Navigate to the client directory:
-```bash
-cd client
-```
-
-#### Install dependencies:
-```bash
-npm install
-```
-
-
-#### Create your own .env file under client directory
-
-```bash
-VITE_GROQ_API_KEY=<YOUR_GROQ_API_KEY>
-```
-
-#### Start the development server:
-```bash
-npm run dev
-```
-
+---
 
 ## Usage
 
@@ -171,6 +160,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 - [React](https://reactjs.org/) library for web and native user interfaces
 - [Tailwind](https://tailwindcss.com/) for the styling
+- [Daytona](https://github.com/daytonaio/daytona) as development environment
 
 
 ---
