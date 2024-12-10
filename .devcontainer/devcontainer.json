@@ -1,25 +1,13 @@
 {
-	"name": "Node.js and Python",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
-
-	// Features for Node.js and Python support.
-	"features": {
-		"ghcr.io/devcontainers/features/python:1": {
-			"version": "3.10"
-		}
-	},
-
-	"forwardPorts": [3000, 3001],
-
-	"postCreateCommand": "cd client && npm install && cd ../server && pip install -r requirements.txt && npm install",
-
-	// Customizations for VS Code.
-	"customizations": {
-		"vscode": {
-			"extensions": ["ms-python.python", "dbaeumer.vscode-eslint"]
-		}
-	}
-
-	// Uncomment to connect as root.
-	// "remoteUser": "root"
-}
+    "name": "React + Node.js Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+    "features": {
+      "python": "3.10"
+    },
+    "forwardPorts": [
+      3000,
+      3001
+    ],
+    "postCreateCommand": "cd client && npm install && cd ../server && pip install -r requirements.txt && npm install"
+  }
+  
