@@ -5,10 +5,5 @@
     "python": "3.10"
   },
   "forwardPorts": [5173],
-  "initializeCommand": "mkdir -p /home/node/.vscode-server/extensions",
-  "postCreateCommand": "npm install && npm install @vscode/spdlog",
-  "settings": {
-    "editor.formatOnSave": true,
-    "terminal.integrated.defaultProfile.linux": "bash"
-  }
+  "postCreateCommand": "npm install && npm install @vscode/spdlog"
 }
