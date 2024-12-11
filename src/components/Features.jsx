@@ -7,7 +7,7 @@ const FeaturesSection = () => {
   return (
     <div className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4">More than just a tool</h2>
+        <h2 className="text-3xl font-bold mb-4">More than just a tool</h2>
         <p className="text-gray-600 mb-12">Explore what else we can do for you</p>
 
         {/* Grid layout for responsive cards */}
@@ -18,7 +18,7 @@ const FeaturesSection = () => {
               <img src={Career} alt="Career Icon" className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Career Assistance</h3>
-            <p className="text-gray-600">Tailored job search assistance, resume writing support, and interview preparation.</p>
+            <p className="text-gray-600">Tailored job search assistance.</p>
           </div>
 
           {/* Housing Feature */}
@@ -27,7 +27,7 @@ const FeaturesSection = () => {
               <img src={Housing} alt="Housing Icon" className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Mental Health Support</h3>
-            <p className="text-gray-600">Receive guidance on mental health resources, counseling services, and strategies for emotional well-being during reintegration.</p>
+            <p className="text-gray-600">Guidance on mental health resources and counseling services</p>
           </div>
 
           {/* Legal Feature */}
@@ -36,7 +36,7 @@ const FeaturesSection = () => {
               <img src={Legal} alt="Legal Icon" className="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Legal Support</h3>
-            <p className="text-gray-600">Guidance on legal rights, record expungement, and finding pro-bono services.</p>
+            <p className="text-gray-600">Guidance on legal right and record expungement</p>
           </div>
         </div>
       </div>

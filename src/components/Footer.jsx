@@ -9,9 +9,6 @@ export default function Footer() {
                     {/* Navigation Links */}
                     <div className="flex space-x-6 mb-6 text-gray-600">
                         <a href="#" className="hover:text-gray-900">About</a>
-                        <a href="#" className="hover:text-gray-900">Blog</a>
-                        <a href="#" className="hover:text-gray-900">Jobs</a>
-                        <a href="#" className="hover:text-gray-900">Press</a>
                         <a href="#" className="hover:text-gray-900">Accessibility</a>
                         <a href="#" className="hover:text-gray-900">Partners</a>
                     </div>
