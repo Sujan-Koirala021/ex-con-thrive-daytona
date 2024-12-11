@@ -1,22 +1,7 @@
 {
   "name": "React Dev Container",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "editor.formatOnSave": true,
-        "files.autoSave": "afterDelay"
-      },
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode",
-        "ms-vscode.vscode-typescript-next"
-      ]
-    }
-  },
-  "features": {
-    "python": "3.10"
-  },
+ 
   "forwardPorts": [5173],
   "postCreateCommand": "npm install"
 }
