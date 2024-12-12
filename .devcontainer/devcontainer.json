@@ -7,6 +7,20 @@
     "forwardPorts": [
       5173
     ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "ms-vscode.vscode-typescript-next"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "eslint.format.enable": true,
+                "prettier.requireConfig": true
+            }
+        }
+    },
     "postCreateCommand": "npm install"
   }
   
