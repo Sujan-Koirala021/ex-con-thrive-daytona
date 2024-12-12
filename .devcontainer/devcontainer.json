@@ -1,6 +1,6 @@
 {
   "name": "React Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node",
  
   "forwardPorts": [5173],
   "postCreateCommand": "npm install"
