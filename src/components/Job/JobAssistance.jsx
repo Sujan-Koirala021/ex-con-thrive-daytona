@@ -47,23 +47,24 @@ const JobAssistance = () => {
         ],
         model: "mixtral-8x7b-32768",
       });
-    
+  
       const responseContent = response.choices[0]?.message?.content || "";
-    
+  
       console.log("AI Response:", responseContent);
-    
+  
       let jobsList = [];
       try {
-        jobsList = JSON.parse(responseContent);
-        if (!Array.isArray(jobsList)) {
-          throw new Error("Response is not an array");
+        const parsedResponse = JSON.parse(responseContent);
+        if (!Array.isArray(parsedResponse.jobs)) {
+          throw new Error("Response does not contain a valid 'jobs' array");
         }
+        jobsList = parsedResponse.jobs;
       } catch (parseError) {
         console.error("JSON Parsing Error:", parseError);
         setError("Received invalid data. Please try again.");
         return;
       }
-    
+  
       setJobs(jobsList);
     } catch (error) {
       console.error("Error fetching jobs:", error);
@@ -71,10 +72,8 @@ const JobAssistance = () => {
     } finally {
       setLoading(false);
     }
-    
-
   };
-
+  
   return (
     <div className="max-w-2xl mx-auto mt-10 mb-10 p-6 bg-white shadow-xl rounded-xl">
       <h2 className="text-3xl font-bold text-center mb-6 text-gray-800">Personalized Job Search</h2>
