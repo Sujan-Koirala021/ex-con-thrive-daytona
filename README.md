@@ -36,7 +36,7 @@
 ## Introduction
 Ex-Cons Thrive is a project designed to help formerly incarcerated individuals reintegrate into society by providing job search assistance, legal support, mental health services, and more. This project draws inspiration from the hardships faced by ex-convicts during reintegration, including the stigma, lack of opportunities, and legal barriers that often limit their options. It makes use of Llama3-8b-8192 and Mixtral-8x7b-32768 AI model.
 
-Dev.to url: https://dev.to/sujankoirala021/building-personalized-assistance-of-ex-convicts-ex-cons-thrive-172l
+
 
 ## Problem Statement
 
